@@ -7,8 +7,8 @@ const path = "./data.json";
 
 const markCommit = (x, y) => {
   const date = moment()
-    .subtract(2, "y")
-    .add(5, "d")
+    .subtract(5, "y")
+    .add(10, "d")
     .add(5, "w")
     .add(6, "d")
     .format();
