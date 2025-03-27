@@ -9,8 +9,8 @@ const markCommit = (x, y) => {
   const date = moment()
     .subtract(2, "y")
     .add(5, "d")
-    .add(x, "w")
-    .add(y, "d")
+    .add(5, "w")
+    .add(6, "d")
     .format();
 
   const data = {
