@@ -19,7 +19,7 @@ const markCommit = (x, y) => {
 
   jsonfile.writeFile(path, data, () => {
     simpleGit().add([path]).commit(date, { "--date": date }).push();
-  });
+  }); //
 };
 
 const makeCommits = (n) => {
