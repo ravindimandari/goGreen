@@ -7,8 +7,8 @@ const path = "./data.json";
 
 const markCommit = (x, y) => {
   const date = moment()
-    .subtract(1, "y")
-    .add(1, "d")
+    .subtract(2, "y")
+    .add(5, "d")
     .add(x, "w")
     .add(y, "d")
     .format();
@@ -19,7 +19,7 @@ const markCommit = (x, y) => {
 
   jsonfile.writeFile(path, data, () => {
     simpleGit().add([path]).commit(date, { "--date": date }).push();
-  }); //
+  }); 
 };
 
 const makeCommits = (n) => {
